@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+	</script>
+	<link rel="stylesheet" type="text/css" href="Assets/registerstyle.css">
+	<title>Resgiter</title>
+</head>
+
+<body>
+	<header>
+		<img src="Pictures/Logo.png" id="logo">
+		<ul id="nav">
+			<li><a href="index.html" class="navItem">Home</a></li>
+			<li><a href="index.html" class="navItem">Travel</a></li>
+			<li><a href="index.html" class="navItem">Cuisine</a></li>
+			<li><a href="index.html" class="navItem">About Us</a></li>
+			<li></li>
+			<li class="btn-group">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false">
+					Register
+				</button>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="register.html">Register</a>
+					<a class="dropdown-item" href="login.html">Login</a>
+					<a class="dropdown-item" href="suggestion.html">Suggestion</a>
+				</div>
+			</li>
+		</ul>
+	</header>
+
+	<div class="container">
+		<div class="row h-100 justify-content-center">
+			<div class="col col-lg-8 col-md-10 col-sm-12 my-auto">
+				<div class="card">
+					<div class="card-body">
+						<h1>Register</h1>
+						<form action="#" method="POST">
+							<div class="form-group">
+								<label for="nama">Nama</label>
+								<input type="text" class="form-control" name="nama" id="nama" placeholder="Masukkan nama"
+									onkeyup="checkEmpty(this)">
+							</div>
+
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="text" class="form-control" name="email" id="email" placeholder="example@mail.com"
+									onkeyup="checkEmpty(this)">
+							</div>
+
+							<div class="row">
+								<div class="col-lg-6 col-sm-12">
+									<div class="form-group">
+										<label for="password1">Password</label>
+										<input type="password" class="form-control" name="password1" id="password1"
+											placeholder="Password here" onkeyup="checkEmpty(this)">
+									</div>
+								</div>
+								<div class="col-lg-6 col-sm-12">
+									<div class="form-group">
+										<label for="password2">Confirm password</label>
+										<input type="password" class="form-control" name="password2" id="password2"
+											placeholder="Confirm your password" onkeyup="checkEmpty(this)">
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="TTL">Tanggal lahir</label>
+								<input type="date" class="form-control" name="TTL" placeholder="Masukkan tanggal lahir"
+									onchange="checkEmpty(this)">
+							</div>
+
+							<div class="form-group">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="terms" name="terms" onclick="validate()">
+									<label class="custom-control-label" for="terms">By ticking this, I agree with <a href="#">terms and
+											conditions</a></label>
+								</div>
+							</div>
+							<!-- <button type="button" class="btn btn-primary btn-block" data-toggle="modal"
+								data-target="#exampleModal">Register</button> -->
+							<button type="button" id="registerButton" class="btn btn-primary btn-block">Register</button>
+							<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+								aria-hidden="true">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLabel">Register</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">You are successfully registered!</div>
+										<div class="modal-footer">
+											<a href="javascript:void(0)" class="btn btn-primary" data-dismiss="modal">Close</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="Assets/script.js"></script>
+	<script src="Assets/registerscript.js"></script>
+</body>
+
+</html>

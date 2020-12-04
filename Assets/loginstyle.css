@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+	background-color: whitesmoke;
+	font-family: Montserrat;
+	margin: 0;
+	color: black;
+	background-image: url("Wanderlustbg.png");
+	background-repeat: no-repeat;
+	background-position: center right;
+	background-size: cover;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 25% 75%;
+	height: 10vh;
+	margin: 0;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+ul#nav {
+	display: grid;
+	grid-template-columns: repeat(6, 15%);
+	list-style: none;
+	text-align: center;
+	margin-left: 1.7vw;
+	margin-top: 4vh;
+}
+
+img#logo {
+	width: 13vw;
+	height: auto;
+	margin: 2.3vh 0vw 0vh 6vw;
+}
+
+a.navItem {
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+}
+
+.btn-group {
+	color: black;
+	font-weight: 700;
+	width: 4vw;
+	height: 4.5vh;
+	margin-top: -1vh;
+	margin-left: 6vw;
+}
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus,
+.btn-primary:disabled,
+.btn-primary:hover {
+	background-color: #7ed957;
+	border-color: #7ed957;
+}
+
+
+.container {
+	height: 100vh;
+	margin: 0vh 0vw 0vh 21vw;
+}
+
+h1 {
+	text-align: center;
+}
+
+.disabled {
+	cursor: default;
+}
